@@ -26,3 +26,12 @@ print("result2 = %s"%result2)
 
 #in normale Funktion muss man return schreiben damit die Losung auskommen  kann. Lambda nicht.
 #lambda Funktion ist nur fuer einfache Rechnung.
+
+def test1(a,b,func):
+	result = func(a,b)
+	print("result = %s"%result)
+
+test1(11,22,lambda x,y:x+y)
+test1(11,22,lambda x,y:x-y)
+test1(11,22,lambda x,y:x*y)
+test1(11,22,lambda x,y:x/y)
